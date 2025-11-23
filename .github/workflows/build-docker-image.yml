@@ -41,6 +41,7 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository_owner }}/moyvbin:latest
             ghcr.io/\( {{ github.repository_owner }}/moyvbin: \){{ github.run_number }}
+            ghcr.io/\( {{ github.repository_owner }}/moyvbin:sha- \){{ github.sha :: 8 }}
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=HTTP Server
