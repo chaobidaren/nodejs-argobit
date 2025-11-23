@@ -39,7 +39,9 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/${{ github.repository_seer }}/maotu:8892
+            ghcr.io/maotu8892/moyvbin:latest
+            ghcr.io/maotu8892/moyvbin:${{ github.run_number }}
+            ghcr.io/maotu8892/moyvbin:sha-${{ github.sha }}2
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=HTTP Server
